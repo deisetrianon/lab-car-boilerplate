@@ -19,6 +19,7 @@ body {
 .nav-links {
   font-size: 1.05rem;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .nav-links:hover {
@@ -124,6 +125,31 @@ body {
   border-radius: 8px;
   border: 1px solid white;
   color: white;
+}
+
+.bg-color-modal {
+  background-color: #08AC9D;
+}
+
+.fa-user-circle {
+  color: #3390FF;
+}
+
+.bg-register-modal {
+  background-color: #A9A9A9;
+}
+
+.modal h5 {
+  background-color: black;
+  border-radius: 4px;
+}
+
+.register-modal-button {
+  background-color: #5BC0DE;
+}
+
+.register-select {
+  background-color: #DDDDDD;
 }
 
 footer {

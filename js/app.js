@@ -1,4 +1,4 @@
-/* Google Maps API */
+/* Google Maps API (Referência: Peru) */
 var map;
 var mapMobile;
 function initMap() {

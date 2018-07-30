@@ -30,7 +30,7 @@
           <ul class="nav navbar ml-auto navbar-nav">
             <li class="nav-item"><a class="nav-links m-4 text-dark" href="#">Viaja</a></li>
             <li class="nav-item"><a class="nav-links m-4 text-dark" href="#">Conduce</a></li>
-            <li class="nav-item"><a class="nav-links m-4 text-dark" href="#">Inicia sesión</a></li>
+            <li class="nav-item"><a class="nav-links m-4 text-dark" data-toggle="modal" data-target="#logInModal">Inicia sesión</a></li>
           </ul>
         </div>
       </div>
@@ -41,18 +41,18 @@
     <!-- Section 1: medium, large and extra-large devices -->
     <section class="bg-taxi container-fluid w-100 d-none d-md-block">
       <div class="row">
-        <div class="col-10 offset-2 col-sm-7 offset-sm-5 col-md-5 offset-md-7 col-lg-5 offset-lg-7 register-section bg-color">
+        <div class="col-10 offset-2 col-sm-7 offset-sm-5 col-md-5 offset-md-7 col-lg-5 offset-lg-7 col-xl-5 offset-xl-7 register-section bg-color">
           <h1 class="fw-600">Disfruta del viaje</h1>
           <h1 class="mb-5 fw-600">Eres dueño de tu tiempo</h1>
           <h2 class="d-inline">Viaja con</h2> 
           <img src="assets/images/logoBlanco.png" class="d-inline m-3" width="100px">
-          <button type="button" title="Registrate" class="btn bg-white d-block mb-4 text-body text-uppercase fw-600">REGÍSTRATE</button>
+          <button type="button" title="Registrate" data-toggle="modal" data-target="#registerModal" class="btn bg-white d-block mb-4 text-body text-uppercase fw-600">REGÍSTRATE</button>
           <div class="d-flex justify-content-evenly mb-3">
             <hr class="bg-white h-1"></hr>
             <span class="font-weight-bold">0 bien</span>
             <hr class="bg-white h-1"></hr>
           </div>
-          <button type="button" title="Conviertete" class="btn bg-white d-block text-body fw-600">Conviértete en un conductor</button>
+          <button type="button" title="Conviertete" data-toggle="modal" data-target="#convierteteModal" class="btn bg-white d-block text-body fw-600">Conviértete en un conductor</button>
         </div>
       </div>
     </section>
@@ -72,8 +72,8 @@
     <!-- Section 2: medium, large and extra-large devices -->
     <section class="phone-app  d-none d-md-block container-fluid w-100 h-auto pt-5 pb-5 bg-color">
       <div class="row p-4 d-flex flex-nowrap justify-content-start border-top border-right border-bottom border-white">
-        <img src="assets/images/iPhone6Plus.png" class="p-3 col-md-4 offset-md-1 col-lg-4 offset-lg-1">
-        <article class="text-white mt-4 col-md-5 offset-md-1 col-lg-5 offset-lg-1">
+        <img src="assets/images/iPhone6Plus.png" class="p-3 col-md-4 offset-md-1 col-lg-4 offset-lg-1 col-xl-4 offset-xl-1">
+        <article class="text-white mt-4 col-md-5 offset-md-1 col-lg-5 offset-lg-1 col-xl-5 offset-xl-1">
           <h1 class="mb-4 fw-600">Descarga la nueva app</h1>
           <h4 class="roboto font-weight-normal">La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</h4>
           <h4 class="roboto font-weight-normal">Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</h4>
@@ -95,10 +95,10 @@
     <!-- Section 3: all devices -->
     <section class="conduce container-fluid w-100">
       <div class="row">
-        <div class="p-4 pt-5 col-12 col-sm-12 col-md-4 offset-md-8 col-lg-4 offset-lg-8 conduce-section">
+        <div class="p-4 pt-5 col-12 col-sm-12 col-md-4 offset-md-8 col-lg-4 offset-lg-8 col-xl-4 offset-xl-8 conduce-section">
           <h1 class="mt-4 fw-600">Conduce cuando quieras</h1>
           <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-          <button type="button" title="Conviertete" class="btn btn-yellow bg-color d-block text-white fw-600">Conviértete en conductor</button>
+          <button type="button" title="Conviertete" data-toggle="modal" data-target="#convierteteModal" class="btn btn-yellow bg-color d-block text-white fw-600">Conviértete en conductor</button>
         </div>
       </div>
     </section>
@@ -106,20 +106,20 @@
     <!-- Section 4: medium, large and extra-large devices -->
     <section class="rates-map d-none d-md-block container-fluid w-100 bg-color text-white">
       <div class="row d-flex justify-content-around flex-nowrap p-5">
-        <div class="col-md-5 col-lg-5 mt-5">
+        <div class="col-md-5 col-lg-5 col-xl-5 mt-5">
           <h3 class="fw-600 mb-3">Tarifas</h3>
           <h5 class="roboto font-weight-normal mb-5">Consulta las tarifas LabCar aquí</h5>
           <div class="form-group-row mb-4">
-            <label class="col-form-label col-lg-2 d-inline"><img src="assets/images/shape.png"></label>
-            <input type="text" class="col-md-8 col-lg-8 d-inline fw-600 p-2" placeholder="Ingrese su ponto de partida">
+            <label class="col-form-label col-md-2 col-lg-2 col-xl-2 d-inline"><img src="assets/images/shape.png"></label>
+            <input type="text" class="col-md-8 col-lg-8 col-xl-8 d-inline fw-600 p-2" placeholder="Ingrese su ponto de partida">
           </div>
           <div class="form-group-row mb-5">
-            <label class="col-form-label col-lg-2 d-inline"><img src="assets/images/shape2.png"></label>
-            <input type="text" class="col-md-8 col-lg-8 d-inline fw-600 p-2" placeholder="Ingrese su destino">
+            <label class="col-form-label col-md-2 col-lg-2 col-xl-2 d-inline"><img src="assets/images/shape2.png"></label>
+            <input type="text" class="col-md-8 col-lg-8 col-xl-8 d-inline fw-600 p-2" placeholder="Ingrese su destino">
           </div>
           <button type="button" title="Trazar ruta" class="btn bg-white d-block text-body text-uppercase fw-600 m-auto">¡TRAZAR RUTA!</button>
         </div>
-        <div class="col-md-5 col-lg-5 bg-color border border-white p-2">
+        <div class="col-md-5 col-lg-5 col-xl-5 bg-color border border-white p-2">
           <div id="map" class="border border-white"></div>
         </div>
       </div>
@@ -149,27 +149,143 @@
         </div>
     </section>
 
+
+    <!-- Modal: Inicia sesión -->
+    <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content bg-color-modal">
+          <div class="modal-header">
+            <h5 class="modal-title ml-auto" id="exampleModalLabel"><i class="fas fa-user-circle fa-7x bg-primary p-3"></i></h5>
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body bg-light m-4 d-flex flex-column">
+            <div class="input-group p-2">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+              </div>
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3 p-2">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon2"><i class="fas fa-lock"></i></span>
+              </div>
+              <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+            </div>
+            <button type="submit" class="btn text-white bg-color mb-3 align-self-center">LOGING</button>
+            <span class="mb-3 align-self-center">Forgot password? <a href="" class="text-danger">Click Here</a>.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Regístrate -->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content bg-register-modal p-2">
+          <button type="button" class="close text-dark ml-auto" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body d-flex flex-column justify-content-center">
+            <h5 class="text-white text-center font-weight-bold p-2">Ya tienes una cuenta?</h5>
+            <span class="text-center">O CREA UNA CUENTA NUEVA</span>
+            <div class="form-group d-flex mt-3">
+              <div class="input-group">
+                <input type="text" class="form-control m-1" id="name" placeholder="Nombre">
+              </div>
+              <div class="input-group">
+                <input type="text" class="form-control m-1" id="nickname" placeholder="Apellido">
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control mb-1" id="email" placeholder="Correo Electronico: ejemplo@correo.mx">
+              <input type="text" class="form-control mb-1" id="number" placeholder="Teléfono">
+              <input type="password" class="form-control mb-1" id="register-password" placeholder="Contraseña">
+              <input type="text" class="form-control mb-1" id="city" placeholder="Ciudad">
+              <input type="text" class="form-control mb-1" id="code" placeholder="(Opcional) Código de invitacion">
+              <select class="form-control register-select" id="register-select">
+                <option selected>Como te enteraste de nosotros?</option>
+                <option>Opción 1</option>
+                <option>Opción 2</option>
+                <option>Opción 3</option>
+              </select>
+            </div>
+            <button type="submit" class="btn text-white w-100 font-weight-bold register-modal-button">ENVIAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Conviértete -->
+    <div class="modal fade" id="convierteteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content bg-register-modal p-2">
+          <button type="button" class="close text-dark ml-auto" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body d-flex flex-column justify-content-center">
+            <div class="form-group">
+              <label class="font-weight-bold text-dark">¿Tienes vehículo de 4 puertas?</label>
+              <select class="form-control mb-4">
+                <option>Sí</option>
+                <option>No</option>
+              </select>
+  
+              <label class="font-weight-bold text-dark">Marca</label>
+              <select class="form-control">
+                <option selected>Ellige la marca del vehículo</option>
+                <option>Marca 1</option>
+                <option>Marca 2</option>
+                <option>Marca 3</option>
+              </select>
+              <small class="d-block mb-4">¿No ves tu vehículo en la lista? Envía un correo electrónico a <a href="">sociosmdv@uber.com</a></small>
+              
+              <label class="font-weight-bold text-dark">Modelo</label>
+              <select class="form-control mb-4">
+                <option>Modelo 1</option>
+                <option>Modelo 2</option>
+                <option>Modelo 3</option>
+              </select>
+  
+              <label class="font-weight-bold text-dark">Año</label>
+              <select class="form-control mb-4">
+                <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+              </select>
+  
+              <label class="font-weight-bold text-dark">Número de la matrícula</label>
+              <input type="text" class="form-control mb-1" id="matricula" placeholder="Número de la matrícula">
+              La información de la matrícula ayuda a los clientes a identificar tu vehículo
+            </div>
+            <button type="submit" class="btn text-white w-100 font-weight-bold register-modal-button">ENVIAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </main>
 
 
   <!-- Footer: medium, large and extra-large devices -->
   <footer class="d-none d-md-block container-fluid w-100 text-white pt-5">
     <div class="row pt-5">
-      <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+      <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
         <img src="assets/images/logoBlanco.png">
         <hr class="bg-white">
       </div>
     </div>
     <div class="row">
-      <div class="d-flex col-md-10 offset-md-1 col-lg-10 offset-lg-1">
-        <ul class="align-self-end list-unstyled col-md-3 col-lg-3">
-          <li class="m-1 d-inline"><i class="fab fa-facebook-f"></i></li>
-          <li class="m-1 d-inline"><i class="fab fa-twitter"></i></li>
-          <li class="m-1 d-inline"><i class="fab fa-linkedin-in"></i></li>
-          <li class="m-1 d-inline"><i class="fab fa-apple"></i></li>
-          <li class="m-1 d-inline"><i class="fas fa-play"></i></li>
+      <div class="d-flex col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
+        <ul class="align-self-end list-unstyled col-md-3 col-lg-3 col-xl-3">
+          <li class="m-1 d-inline"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+          <li class="m-1 d-inline"><a href=""><i class="fab fa-twitter"></i></a></li>
+          <li class="m-1 d-inline"><a href=""><i class="fab fa-linkedin-in"></a></i></li>
+          <li class="m-1 d-inline"><a href=""><i class="fab fa-apple"></i></a></li>
+          <li class="m-1 d-inline"><a href=""><i class="fas fa-play"></i></a></li>
         </ul>
-        <ul class="list-unstyled col-md-3 col-lg-3">
+        <ul class="list-unstyled col-md-3 col-lg-3 col-xl-3">
           <li class="m-3"><a href="#">Viaja</a></li>
           <li class="m-3"><a href="#">Conduce</a></li>
           <li class="m-3"><a href="#">Ciudades</a></li>
@@ -179,7 +295,7 @@
           <li class="m-3"><a href="#">Países</a></li>
           <li class="m-3"><a href="#">Seguridad</a></li>
         </ul>
-        <ul class="list-unstyled col-md-3 col-lg-3">
+        <ul class="list-unstyled col-md-3 col-lg-3 col-xl-3">
           <li class="m-3"><a href="#">Oportunidades</a></li>
           <li class="m-3"><a href="#">Nuestra historia</a></li>
           <li class="m-3"><a href="#">API de LabCar</a></li>
@@ -189,12 +305,12 @@
           <li class="m-3"><a href="#">Laboratoria</a></li>
           <li class="m-3"><a href="#">Coders</a></li>
         </ul>
-        <ul class="list-unstyled align-self-end col-md-3 col-lg-3">
-          <li class="m-3"><img src="assets/images/appstore.png" width="150px"></li>
-          <li class="m-3"><img src="assets/images/enBadgeWebGeneric.png" width="150px"></li>
+        <ul class="list-unstyled align-self-end col-md-3 col-lg-3 col-xl-3">
+          <li class="m-3"><a href=""><img src="assets/images/appstore.png" width="150px"></a></li>
+          <li class="m-3"><a href=""><img src="assets/images/enBadgeWebGeneric.png" width="150px"></a></li>
         </ul>
       </div>
-      <div class="col-12 col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+      <div class="col-12 col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
         <hr class="bg-white">
         &copy; 2017 LabCar technologies Inc.
       </div>
@@ -222,13 +338,13 @@
           <li class="m-3"><a href="#">Seguridad</a></li>
         </ul>
         <ul class="list-unstyled col-7 offset-2 col-sm-7 offset-sm-2">
-          <li class="m-1 d-inline"><i class="fab fa-facebook-f"></i></li>
-          <li class="m-1 d-inline"><i class="fab fa-twitter"></i></li>
-          <li class="m-1 d-inline"><i class="fab fa-linkedin-in"></i></li>
-          <li class="m-1 d-inline"><i class="fab fa-apple"></i></li>
-          <li class="m-1 d-inline"><i class="fas fa-play"></i></li>
-          <li class="m-2 mt-4 mb-3"><img src="assets/images/appstore.png" width="135px"></li>
-          <li class="m-2"><img src="assets/images/enBadgeWebGeneric.png" width="135px"></li>
+          <li class="m-1 d-inline"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+          <li class="m-1 d-inline"><a href=""><i class="fab fa-twitter"></i></a></li>
+          <li class="m-1 d-inline"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+          <li class="m-1 d-inline"><a href=""><i class="fab fa-apple"></i></a></li>
+          <li class="m-1 d-inline"><a href=""><i class="fas fa-play"></i></a></li>
+          <li class="m-2 mt-4 mb-3"><a href=""><img src="assets/images/appstore.png" width="135px"></a></li>
+          <li class="m-2"><a href=""><img src="assets/images/enBadgeWebGeneric.png" width="135px"></a></li>
         </ul>
       </div>
       <div class="col-12 col-sm-12 mb-4">
