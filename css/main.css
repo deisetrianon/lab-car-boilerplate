@@ -8,6 +8,10 @@ body {
   font-weight: 600;
 }
 
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
 .bg-color {
   background-color: #F7B617;
 }
@@ -57,7 +61,7 @@ body {
   font-size: 1rem;
 }
 
-.register-section-mobile h1 , .phone-app-mobile h1 {
+.register-section-mobile h1 {
   font-size: 1.4rem;
 }
 
@@ -71,12 +75,6 @@ body {
 
 .phone-app h1 {
   font-size: 1.90rem;
-}
-
-.phone-app p {
-  font-size: 1.4rem;
-  font-weight: 400;
-  font-family: 'Roboto', sans-serif;
 }
 
 .phone-app-mobile h2 {
@@ -115,6 +113,17 @@ body {
 
 .rates-map {
   height: 95vh;
+}
+
+#map , #map-mobile {
+  height: 75vh;
+}
+
+.rates-map input[type='text'] , .rates-map-mobile input[type='text'] {
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid white;
+  color: white;
 }
 
 footer {
